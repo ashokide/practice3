@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 var (
-	sema    = make(chan struct{}, 1) // a binary semaphore guarding balance
+	sema    = make(chan struct{}, 20)
 	balance int
 )
 
